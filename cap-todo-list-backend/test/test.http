@@ -1,0 +1,79 @@
+
+
+### 
+POST http://localhost:4004/browse/Tasks
+Content-Type: application/json
+
+{
+    "ID":2,
+    "user_ID": 5,
+    "title":"bla",
+    "done": false
+    
+
+}
+
+###
+POST http://localhost:4004/browse/User
+Content-Type: application/json
+
+{
+    "ID":7,
+    "username":"name",
+    "password":"asdfe234"
+}
+
+# do task
+###
+POST http://localhost:4004/browse/doTask
+Content-Type: application/json
+
+{
+    "task": 1
+}
+
+# create task
+###
+POST http://localhost:4004/browse/createTask
+Content-Type: application/json
+
+{
+    "user":1,
+    "title":"test2"
+}
+
+# get task
+###
+POST http://localhost:4004/browse/getTasks
+Content-Type: application/json
+
+{
+    "user":1
+}
+
+###
+DELETE http://localhost:4004/browse/User(7)
+
+###
+GET http://localhost:4004/browse/User
+
+###
+GET http://localhost:4004/browse/Tasks
+
+###
+POST  http://localhost:4004/browse/login
+Content-Type: application/json
+
+{
+    "username":"test7",
+    "password":"1234"
+}
+
+###
+POST  http://localhost:4004/browse/register
+Content-Type: application/json
+
+{
+    "username":"test9",
+    "password":"1234"
+}

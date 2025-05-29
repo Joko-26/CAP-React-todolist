@@ -1,0 +1,191 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* nur horizontal zentrieren */
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100vh;        /* optional, damit der Hintergrund bleibt */
+  margin: 0 auto;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  border-style: groove;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.register-button {
+  border-style: groove;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  width: 110%;
+  margin-top: 20px;
+}
+
+.login-button {
+  border-style: groove;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  width: 110%;
+  margin-top: 20px;
+}
+
+.back-button {
+  position: sticky;
+  margin: 10px;
+  padding: 5px;
+  border-style: groove;
+  border-radius: 10px;
+  top: 10px;
+  z-index: 10;
+}
+
+.delete-user-button {
+  position: sticky;
+  margin: 10px;
+  padding: 5px;
+  border-style: groove;
+  border-radius: 10px;
+  top: 10px;
+  z-index: 10;
+  left: 1800px;
+}
+
+.message {
+  color: red;
+}
+
+.task-container {
+  border: 2px solid #666666;
+  border-radius: 8px;
+  background-color: #eeeeee;
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  padding: 5px;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.task span {
+  flex: 1;
+
+}
+
+.task-delete-button {
+  background: #ff0000;
+  color: #ffffff;
+  border-style: groove;
+  border-radius: 10px;
+  border-color: #ff0000;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.task-delete-button:hover{
+  background: #ffffff;
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+.custom-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  background: #ffffff;
+  position: relative;
+  transition: background 0.2s;
+}
+
+/* Nur wenn angehakt: grün */
+.custom-checkbox:checked {
+  background: #00be20;
+  border-color: #00be20;
+}
+
+/* Weißes Häkchen */
+.custom-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.add-countainer {
+  margin: 30px;
+  background-color: #c9c9c9;
+  border: 2px solid #acacac;
+  border-radius: 8px;
+  padding: 30px;
+  padding-right: 50px;
+  list-style: none;
+  align-self: last baseline;
+  position: sticky;
+  top: 800px;
+  z-index: 10;
+}
+
+.add-button {
+  border: 2px solid #666666;
+  border-radius: 8px;
+  
+}
+
