@@ -1,4 +1,4 @@
-# CAP todolist
+# CAP React Todolist Webapp
 
 #### This is an Todolist webapp made with Tanstack router react for frontend and SAP CAP (cloud application programm) for backend.
 
